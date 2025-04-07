@@ -1,0 +1,69 @@
+.home{
+  height:100vh;
+  overflow-y : auto;
+}
+.header-section {
+  background-color: #BFCCCC;
+  height: 45vh;
+  position: relative;
+}
+
+.circle-bg {
+  width: 130vh;
+  height: 105vh;
+  background-color: #A5B2B2;
+  left: -17vh;
+  top: -43vh;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.logo {
+  color: white;
+  font-weight: 500;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 100%;
+}
+
+.text1 {
+  font-family: 'Inknut Antiqua', serif;
+  font-weight: 400;
+  font-size: 200%;
+  color: white;
+  margin: 0;
+}
+
+.text {
+  font-family: 'Marck Script', cursive;
+  color: #566161;
+  font-size: 170%;
+  margin: 0;
+}
+
+.matters-position {
+  margin-left: 160px; 
+}
+
+.btnstyle {
+  background-color: #6D7C7C;
+  color: white;
+  border: none;
+  width: 15%;
+  top:85%;
+  left:7%
+  
+}
+
+.btnstyle:hover {
+  background-color: #5a6a6a;
+}
+
+.loginbtn{
+  background-color:#6D7C7C; 
+  color: white;
+  border: none;
+  width: 95px;
+}
+.loginbtn:hover{
+  background-color: #5a6a6a;
+}

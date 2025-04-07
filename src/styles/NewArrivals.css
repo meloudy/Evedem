@@ -1,0 +1,72 @@
+.newarrivals{
+    position: absolute;
+    padding-top: 12%;
+    color: #6D7C7C;
+    font-weight: 600;
+    font-size: 27px
+    
+}
+
+.carousel{
+    position: absolute;
+    max-width: 90%;
+    height:18vh;
+    top:30vh;
+    border: 0.1vh solid #a1a8a8;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    border-radius: 30px;
+    
+    
+}
+
+.btn1{
+    top: 33.5vh;
+    border:none;
+    background-color: white;
+    height: 5vh;
+    width : 5vh;
+    color:  #6D7C7C;
+    font-size: 40px;
+}
+
+.btn2{
+    top: 33.5vh;
+    border:none;
+    background-color: white;
+    height: 5vh;
+    width : 5vh;
+    color:  #6D7C7C;
+    font-size: 40px;
+}
+
+.selecteditem{
+    border: 1vh solid #6D7C7C;
+    border-radius: 50%;
+
+}
+.unselecteditem{
+    border-radius: 50%;
+    border: none
+}
+
+
+.selected-product-card {
+    background-color: #f8f9fa;
+    
+    margin-bottom: 3vh;
+    height: 50vh;
+    width: 100vh;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.1vh solid #a1a8a8;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
