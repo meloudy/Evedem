@@ -1,0 +1,116 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #c5cccc;
+    padding: 0 2rem;
+    height: 10vh;
+    background-color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .logo {
+    color: #748888;
+    font-weight: 500;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 100%;
+    padding-left: 3vh;
+    padding-top: 1vh;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #6D7C7C;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .login-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid #6D7C7C;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    width: 20%;
+    height: 10%;
+    margin-top: -1vh;
+  }
+  .login-btn:hover{
+    background-color:  #6D7C7C;
+    color: white;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+    color: #6D7C7C;
+    cursor: pointer;
+    padding-right: 3vh;
+    
+  }
+
+  .links{
+    padding-top: 2vh;
+  }
+  
+  .icons:hover{
+    color:#89a0a0
+  }
+  .sell{
+    color:#6D7C7C
+  }
+  .sell:hover{
+    color :#6D7C7C;
+    font-weight: 600;
+  }
+
+  .products{
+    color:#6D7C7C
+  }
+  .products:hover{
+    color :#6D7C7C;
+    font-weight: 600;
+  }
+
+  .contact{
+    color:#6D7C7C
+  }
+  .contact:hover{
+    color :#6D7C7C;
+    font-weight: 600;
+  }
+
+  .contact:active{
+    color :#6D7C7C;
+    font-weight: 600;
+  }
+  .sell:active{
+    color :#6D7C7C;
+    font-weight: 600;
+  }
+
+  .products:active{
+    color :#6D7C7C;
+    font-weight: 600;
+  }

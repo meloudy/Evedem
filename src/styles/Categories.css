@@ -1,0 +1,163 @@
+.armchair{
+    color : #6D7C7C;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-top: 3%;
+
+}
+
+.card {
+    
+    width: 46vw; 
+    height: 35vh;
+    background-color: #D8DDF3 !important;
+    border-radius: 20px !important;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    border: none !important;
+    
+  }
+  
+  .img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  
+
+  .texts{
+   
+    position: relative;
+    width:40%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+  }
+  .evedem {
+    position: absolute;
+    color: #6e6a65;
+    font-weight: 500;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 100%;
+    top:5%
+    
+  }
+
+  .sub{
+    position: absolute;
+    color: #6D7C7C;
+    font-family: 'Marck Script', cursive;
+    font-size: 100%;
+    margin-left: 70px;
+    top:12%
+  }
+
+  .description{
+    position: absolute;
+    top:25%;
+    width:16vw;
+    color :#635f5b;
+    font-size: 15px;
+    margin-left: 23px;
+    
+   
+    
+  }
+
+  .card .texts .btn{
+    position: absolute;
+    width: 50%;
+    height: 15%;
+    background-color: #6D7C7C ;
+    color: white ;
+    border: none !;
+    top:75%;
+    font-size: 80% ;
+    padding: 0px 20px; 
+    
+  }
+  .card .texts .btn:hover{
+    background-color:  #91a7a7 ;
+  }
+
+
+  .right-catg{
+    position: absolute;
+    left:50%
+  }
+
+  .card1 {
+    
+    width: 46vw; 
+    height: 32.3vh;
+    background-color: #D8D5D2!important;
+    border-radius: 20px !important;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    border: none !important;
+    
+  }
+
+  .card1 .texts .btn{
+    position: absolute;
+    width: 50%;
+    height: 15%;
+    background-color: #6D7C7C ;
+    color: white ;
+    border: none !;
+    top:75%;
+    font-size: 80% ;
+    padding: 0px 20px; 
+    
+  }
+  .card1 .texts .btn:hover{
+    background-color:  #91a7a7 ;
+  }
+
+  .card1 .img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+  }
+
+  .bottom-row{
+    top:280px
+  }
+  
+ 
+
+  .bottom-row .card3 {
+    
+    width: 46vw; 
+    height: 32.3vh;
+    background-color: #D8DDF3;
+    border-radius: 20px ;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    
+  }
+ .bottom-row .card3 .texts .btn{
+    position: absolute;
+    width: 50%;
+    height: 15%;
+    background-color: #6D7C7C ;
+    color: white ;
+    border: none !;
+    top:75%;
+    font-size: 80% ;
+    padding: 0px 20px; 
+    
+  }
+  
+  .bottom-row .card3 .texts .btn:hover{
+    background-color:  #91a7a7 ;
+  }
