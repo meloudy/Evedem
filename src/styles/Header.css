@@ -67,3 +67,53 @@
 .loginbtn:hover{
   background-color: #5a6a6a;
 }
+
+/* Hamburger icon */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #6D7C7C;
+  border-radius: 2px;
+}
+
+/* Mobile menu style */
+.mobile-menu {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Assurer que le cercle reste à gauche même sur mobile */
+@media (max-width: 768px) {
+  .circle-bg {
+    width: 150vw;
+    height: 150vw;
+    left: -60vw;
+    top: -70vw;
+  }
+
+  .matters-position {
+    margin-left: 0;
+  }
+
+  .btnstyle {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .text1, .text {
+    text-align: center;
+  }
+
+  .img-fluid {
+    max-width: 90%;
+  }
+}

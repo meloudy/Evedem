@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from '../components/Navbar.tsx';
 import '../styles/Categories.css';
+import '../images.d.ts'
 import Armchair from '../assets/armchair.png';
 import DressingTable from '../assets/drsngtbl.png';
 import Table from '../assets/table.png'

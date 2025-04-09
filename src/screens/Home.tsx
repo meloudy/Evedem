@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import NewArrivals from "../components/NewArrivals";
-import '../styles/Header.css'
+import '../styles/Header.css';
+
  
 
 function Home(){
@@ -9,6 +10,7 @@ function Home(){
     
       <Header></Header>
       <NewArrivals></NewArrivals>
+     
     </div>
 
 }

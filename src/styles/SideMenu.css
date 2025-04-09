@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+  
+  .container .sidemenu {
+    width: 25vw;
+    height: 100vh;
+    background-color: #E9F2F2;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .sidemenu .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: #6A6565;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .sidemenu .btn:hover {
+    color: white;
+    background-color: #6a948a7c;
+  }
+  
+  .sidemenu .btn.active {
+    color: white;
+    background-color: #6a948a;
+  }
+  
+  .sidemenu .btn.active .icon {
+    color: white;
+  }
+  
+  .sidemenu .btn .icon {
+    color: #6A6565;
+  }
+  
+  .sidemenu .btn:hover .icon {
+    color: white;
+  }
+  
+  .content {
+    width: 70vw;
+    height: 100vh;
+    padding:20px
+   
+    
+  }
+  
