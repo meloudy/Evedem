@@ -1,19 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/SideMenu.css';
 import { FaUser } from "react-icons/fa";
-import { MdNotifications, MdDashboard, MdDelete, MdLogout } from "react-icons/md";
+import { MdNotifications, MdDashboard, MdLogout } from "react-icons/md";
 import Profile from '../components/MyProfile';
 import Dashboard from '../components/Dashboard';
 import Notifications from '../components/Notifications';
-import DeleteAccount from '../components/DeleteAccount';
-import Logout from '../components/Logout';
 
 function SideMenu() {
- 
+  const [showLogout, setShowLogout] = useState(false);
   const [activeComponent, setActiveComponent] = useState('profile');
-  const handleButtonClick = (component) => {
+  const logoutRef = useRef<HTMLDivElement>(null);
+
+  const handleButtonClick = (component: string) => {
     setActiveComponent(component);
   };
+
+  const onClose = () => {
+    setShowLogout(false);
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (logoutRef.current && !logoutRef.current.contains(event.target as Node)) {
+        onClose();
+      }
+    }
+
+    if (showLogout) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showLogout]);
 
   const renderComponent = () => {
     switch (activeComponent) {
@@ -23,63 +45,61 @@ function SideMenu() {
         return <Dashboard />;
       case 'notifications':
         return <Notifications />;
-      case 'deleteAccount':
-        return <DeleteAccount />;
-      case 'logout':
-        return <Logout />;
       default:
-        return <Profile/>;
+        return <Profile />;
     }
   };
 
   return (
-  <div className='container'>
-    <div className="sidemenu">
-         <button
-              className={`btn ${activeComponent === 'profile' ? 'active' : ''}`}
-              onClick={() => handleButtonClick('profile')}
-           >
-             <FaUser className="icon" />
-           My Profile
+    <div className='cont'>
+      <div className="sidemenu">
+        <button
+          className={`btn ${activeComponent === 'profile' ? 'active' : ''}`}
+          onClick={() => handleButtonClick('profile')}
+        >
+          <FaUser className="icon" />
+          My Profile
         </button>
 
-<button
-  className={`btn ${activeComponent === 'dashboard' ? 'active' : ''}`}
-  onClick={() => handleButtonClick('dashboard')}
->
-  <MdDashboard className="icon" />
-  Dashboard
-</button>
+        <button
+          className={`btn ${activeComponent === 'dashboard' ? 'active' : ''}`}
+          onClick={() => handleButtonClick('dashboard')}
+        >
+          <MdDashboard className="icon" />
+          Dashboard
+        </button>
 
-<button
-  className={`btn ${activeComponent === 'notifications' ? 'active' : ''}`}
-  onClick={() => handleButtonClick('notifications')}
->
-  <MdNotifications className="icon" />
-  Notifications
-</button>
+        <button
+          className={`btn ${activeComponent === 'notifications' ? 'active' : ''}`}
+          onClick={() => handleButtonClick('notifications')}
+        >
+          <MdNotifications className="icon" />
+          Notifications
+        </button>
 
-<button
-  className={`btn ${activeComponent === 'deleteAccount' ? 'active' : ''}`}
-  onClick={() => handleButtonClick('deleteAccount')}
->
-  <MdDelete className="icon" />
-  Delete Account
-</button>
+        <button
+          className='btn'
+          onClick={() => setShowLogout(!showLogout)}
+        >
+          <MdLogout className="icon" />
+          Log out
+        </button>
+      </div>
 
-<button
-  className={`btn ${activeComponent === 'logout' ? 'active' : ''}`}
-  onClick={() => handleButtonClick('logout')}
->
-  <MdLogout className="icon" />
-  Log out
-</button>
-
-     </div>
       <div className="content">
         {renderComponent()}
       </div>
-</div>
+
+      {showLogout && (
+        <div className='logout-panel' ref={logoutRef}>
+          <p className='logout-text'>Are you sure you want to log out ?</p>
+          <div className='btns'>
+            <button onClick={onClose}>Cancel</button>
+            <button>Logout</button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 

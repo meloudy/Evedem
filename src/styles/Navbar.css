@@ -12,6 +12,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+   
   }
  
   
@@ -60,7 +61,8 @@
     font-size: 14px;
     width: 30%;
     height: 10%;
-    margin-top: -1vh;
+    margin-top: -1vh;;
+    color: #6D7C7C;
     
   }
   .login-btn:hover{
