@@ -6,8 +6,10 @@ import Armchair from '../assets/armchair.png';
 import DressingTable from '../assets/drsngtbl.png';
 import Table from '../assets/table.png'
 import Bed from '../assets/bed.png'
+import { useNavigate } from 'react-router-dom';
 
 function Categories(){
+  const navigate = useNavigate();
     return(<div>
         <Navbar/>
         <div className='position-relative d-flex flex-row' >
@@ -21,7 +23,7 @@ function Categories(){
                  <p className="description">Upgrade your comfort zone ! 
                                             Shop our incredible selection of 
                                             armchairs and discover relaxation redefined</p>
-                <button className="btn">Discover Now</button>
+                <button className="btn" onClick={() => navigate('/armchairs')}>Discover Now</button>
               </div>
               
               
@@ -37,7 +39,7 @@ function Categories(){
                 <p className='sub'>Dressing tables</p>
                  <p className="description">Create your dream vanity without the high cost
                     . Shop now and upgrade your mornings!</p>
-                <button className="btn">Discover Now</button>
+                <button className="btn" onClick={() => navigate('/dressing-tables')}>Discover Now</button>
               </div>
               
               
@@ -56,7 +58,7 @@ function Categories(){
                  <p className="description">Find your perfect table!
                     Explore our wide selection of dining tables, 
                     coffee tables, and more. Shop now!</p>
-                <button className="btn">Discover Now</button>
+                <button className="btn" onClick={() => navigate('/tables')}>Discover Now</button>
               </div>
               
               
@@ -72,7 +74,7 @@ function Categories(){
                 <p className='sub'>Beds</p>
                  <p className="description">Invest in your sleep! Our high-quality beds and 
                     mattresses ensure a restful night with luxury and support</p>
-                <button className="btn">Discover Now</button>
+                <button className="btn" onClick={() => navigate('/beds')}>Discover Now</button>
               </div>
               
               

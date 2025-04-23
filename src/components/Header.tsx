@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Categories from "../screens/Categories";
+import Home from '../screens/Home';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+   const navigate = useNavigate();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -13,7 +17,7 @@ export default function Header() {
 
       <div className="container position-relative">
         <nav className="d-flex justify-content-between align-items-center mb-3">
-          <h2 className="logo">Evedem</h2>
+         <Link to={'/'}><h2 className="logo">Evedem</h2></Link> 
 
           {/* Hamburger button */}
           <div className="d-md-none" onClick={toggleMenu}>
@@ -27,7 +31,7 @@ export default function Header() {
           {/* Desktop Menu */}
           <div className="d-none d-md-flex gap-4 align-items-center">
             <a href="#" className="text-dark text-decoration-none">Sell</a>
-            <a href="#" className="text-dark text-decoration-none">Products</a>
+            <Link to={'/categories'} className="text-dark text-decoration-none">Products</Link>
             <a href="#" className="text-dark text-decoration-none">Contact us</a>
             <button className="loginbtn px-4 rounded-pill">Login</button>
           </div>
@@ -55,7 +59,7 @@ export default function Header() {
             </p>
             <p className='small text-light fw-regular'>a warm and inviting retreat.</p>
 
-            <button className="btnstyle position-absolute mt-4 ml-3 px-3 py-2 rounded-pill">Discover now</button>
+            <button className="btnstyle position-absolute mt-4 ml-3 px-3 py-2 rounded-pill" onClick={()=>navigate('/categories')}>Discover now</button>
           </div>
 
           <div className="col-md-6 text-end">

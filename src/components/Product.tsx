@@ -10,6 +10,7 @@ type ProductProps = {
   height: number;
   price: number;
   color: string;
+  status: string;
 };
 
 export default function Product({
@@ -21,13 +22,14 @@ export default function Product({
   height,
   price,
   color,
+  status,
 }: ProductProps) {
   const [showComments, setShowComments] = useState(false);
 
   return (
-    <div className="product relative">
+    <div className="product">
       <img src={imageUrl} className="img" alt={name} />
-      <div className="flex-column parent">
+      <div className="parent">
         <p className="name mt-3">{name}</p>
         <p className="textprod">Material: {material}</p>
         <p className="textprod">Dimensions: {width} x {height} cm</p>
@@ -38,8 +40,10 @@ export default function Product({
             className="w-10 h-10 rounded-full ml-2"
             style={{ backgroundColor: color || "white" }}
           />
+          
         </div>
-        <div className="flex justify-around mt-1 text-gray-200 btn-container">
+        <p className="textprod">Status: {status}</p>
+        <div className="flex justify-around mt-1 text-gray-200 btn-container icons">
           <button title="Flag" className="btn">
             <Flag className="w-4 h-4 hover:text-black icon" />
           </button>

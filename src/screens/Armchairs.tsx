@@ -15,12 +15,12 @@ function Armchairs(){
     
 
     return(
-        <div>
+        <div className="w-100">
            <Navbar/>
            <p className="logo2">Evedem</p>
            <p className="armchairs-style">Armchairs</p>
            <div>
-  <div className="row  d-flex ">
+  <div className="row d-flex">
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
       <Product
         imageUrl={Armchair}
@@ -31,6 +31,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
 
@@ -44,6 +45,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
@@ -56,6 +58,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
@@ -68,6 +71,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
@@ -80,6 +84,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
@@ -92,6 +97,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
@@ -104,6 +110,7 @@ function Armchairs(){
         height={100}
         price={199}
         color="#aabbcc"
+        status=" In stock"
       />
     </div>
   </div>

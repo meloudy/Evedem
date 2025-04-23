@@ -5,8 +5,7 @@ import SideMenu from '../components/SideMenu';
 import MyProfile from '../components/MyProfile';
 import Dashboard from '../components/Dashboard';
 import Notifications from '../components/Notifications';
-import DeleteAccount from '../components/DeleteAccount';
-import Logout from '../components/Logout';
+
 import '../styles/Profile.css'
 
 function Profile() {
