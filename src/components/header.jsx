@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Categories from "../screens/Categories";
 import Home from '../screens/Home';
 
-export default function Header() {
+export default function header() {
   const [isOpen, setIsOpen] = useState(false);
    const navigate = useNavigate();
 
@@ -57,13 +57,13 @@ export default function Header() {
             <p className="mt-2 text-light small fw-regular">
               Ucnover the essentials to transform your living space into 
             </p>
-            <p className='small text-light fw-regular'>a warm and inviting retreat.</p>
+            <p className='small text-light fw-light description'>a warm and inviting retreat.</p>
 
             <button className="btnstyle position-absolute mt-4 ml-3 px-3 py-2 rounded-pill" onClick={()=>navigate('/categories')}>Discover now</button>
           </div>
 
           <div className="col-md-6 text-end">
-            <img src="/imghome.png" alt="sofa" className="img-fluid pb-5" style={{ maxHeight: '90%' }} />
+          <img src="/imghome.png" alt="sofa" className="homeimg img-fluid" style={{ maxHeight: '100%', marginTop: '-40px', marginBottom:'0' }} />
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from '../components/Navbar';
-import Product from '../components/Product'
+import Navbar from '../components/navbar.jsx';
+import Product from '../components/product.jsx'
 import '../styles/Product.css';
-import '../images.d.ts';
+import '../images';
 
 
 
 
 
-function DressingTables(){
+function tables(){
     
 
     return(
@@ -27,4 +27,4 @@ function DressingTables(){
     )
 }
 
-export default DressingTables;
+export default tables;

@@ -1,14 +1,14 @@
 import React from 'react';
 import {useState} from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import SideMenu from '../components/SideMenu';
-import MyProfile from '../components/MyProfile';
-import Dashboard from '../components/Dashboard';
-import Notifications from '../components/Notifications';
+import MyProfile from '../components/myprofile';
+import Dashboard from '../components/dashboard.jsx';
+import Notifications from '../components/notifications.jsx';
 
 import '../styles/Profile.css'
 
-function Profile() {
+function profile() {
   return (
     <div className="layout">
       <Navbar />
@@ -21,4 +21,4 @@ function Profile() {
 
  
 
-export default Profile;
+export default profile;

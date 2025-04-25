@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from '../components/Navbar';
-import Product from '../components/Product'
+import Navbar from '../components/navbar.jsx';
+import Product from '../components/product.jsx'
 import '../styles/Product.css';
-import '../images.d.ts';
+import '../images';
 import DTable from '../assets/dtable1.png';
 import DTable1 from '../assets/dtable2.png';
 
 
  
 
-function DressingTables(){
+function dressingtables(){
     
 
     return(
@@ -29,6 +29,7 @@ function DressingTables(){
     height={100}
     price={199}
     color="#aabbcc"
+    status ="In stock"
   />
 </div>
 
@@ -42,6 +43,7 @@ function DressingTables(){
     height={100}
     price={199}
     color="#aabbcc"
+    status ="In stock"
   />
 </div>
 
@@ -55,6 +57,7 @@ function DressingTables(){
     height={100}
     price={199}
     color="#aabbcc"
+    status ="In stock"
   />
 </div>
 
@@ -68,6 +71,7 @@ function DressingTables(){
     height={100}
     price={199}
     color="#aabbcc"
+    status ="In stock"
   />
 </div>
 
@@ -79,4 +83,4 @@ function DressingTables(){
     )
 }
 
-export default DressingTables;
+export default dressingtables;

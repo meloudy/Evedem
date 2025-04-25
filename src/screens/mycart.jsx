@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/MyCart.css';
-import  Navbar from '../components/Navbar'
+import  Navbar from '../components/navbar'
 import Picture from '../assets/armchair1.png'
 
 
-function MyCart(){
+function mycart(){
     const amount='3567'
     const name='Hello';
     const material ='Hello';
@@ -47,4 +47,4 @@ function MyCart(){
           
         </div>
     )
-}export default MyCart;
+}export default mycart;

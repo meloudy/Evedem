@@ -2,11 +2,11 @@ import React from 'react';
 import '../styles/MyProfile.css';
 import { MdSettings, MdEmail, MdPhone, MdHome } from 'react-icons/md';
 import Picture from '../assets/profilepic.png';
-import '../images.d.ts';
+import '../images';
 import { motion } from 'framer-motion';;
 
 
-function MyProfile() {
+function myprofile() {
   const name = 'Elizabeth Covey';
   const city = 'Bejaia';
   const country = 'Algeria';
@@ -71,4 +71,4 @@ function MyProfile() {
   );
 }
 
-export default MyProfile;
+export default myprofile;

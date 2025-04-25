@@ -169,7 +169,7 @@ const products = [
    
 ];
 
-function NewArrivals() {
+function newarrivals() {
     const [selectedProduct, setSelectedProduct] = useState(products[0]);
     const [visibleIndex, setVisibleIndex] = useState(0); // Indice pour les images visibles
 
@@ -248,4 +248,4 @@ function NewArrivals() {
     );
 }
 
-export default NewArrivals;
+export default newarrivals;

@@ -2,16 +2,16 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../styles/SideMenu.css';
 import { FaUser } from "react-icons/fa";
 import { MdNotifications, MdDashboard, MdLogout } from "react-icons/md";
-import Profile from '../components/MyProfile';
-import Dashboard from '../components/Dashboard';
-import Notifications from '../components/Notifications';
+import Profile from './myprofile';
+import Dashboard from './dashboard';
+import Notifications from './notifications';
 
 function SideMenu() {
   const [showLogout, setShowLogout] = useState(false);
   const [activeComponent, setActiveComponent] = useState('profile');
-  const logoutRef = useRef<HTMLDivElement>(null);
+  const logoutRef = useRef(null);
 
-  const handleButtonClick = (component: string) => {
+  const handleButtonClick = (component) => {
     setActiveComponent(component);
   };
 
@@ -20,8 +20,8 @@ function SideMenu() {
   };
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (logoutRef.current && !logoutRef.current.contains(event.target as Node)) {
+    function handleClickOutside(event) {
+      if (logoutRef.current && !logoutRef.current.contains(event.target)) {
         onClose();
       }
     }
@@ -92,7 +92,7 @@ function SideMenu() {
 
       {showLogout && (
         <div className='logout-panel' ref={logoutRef}>
-          <p className='logout-text'>Are you sure you want to log out ?</p>
+          <p className='logout-text'>Are you sure you want to log out?</p>
           <div className='btns'>
             <button onClick={onClose}>Cancel</button>
             <button>Logout</button>

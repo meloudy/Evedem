@@ -3,9 +3,9 @@ import "../styles/Navbar.css";
 import { FaSearch, FaShoppingCart, FaUser, FaBars } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
-import Profile from '../screens/Profile';
+import Profile from '../screens/profile';
 
-function Navbar() {
+function navbar() {
   const navigate = useNavigate();
   
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,4 +70,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;

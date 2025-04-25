@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .App {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    transition: background-color 0.5s ease;
+    opacity: 0.7;
+  }
+  
+  #section1 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+  .right {
+    width: 60vw;
+    height: 100vh;
+    background-color: #b4b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+  }
+  
+ 
+  .left {
+    width: 40vw;
+    height: 100vh;
+    background-color: #728080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+  }
+  .homeimg{
+    position: absolute;
+    margin-right: 22vw;
+    margin-top:18vh;
+    height: 40vh;
+    width: 50%;
+  }
+  .text1 {
+    position: absolute;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 400;
+    font-size: 125%;
+    color: white;
+    margin: 0;
+    top:25%
+  }
+  
+  .text {
+    position: absolute;
+    font-family: 'Marck Script', cursive;
+    color: #566161;
+    font-size: 90%;
+    margin: 0;
+    top:32%;
+    left:32%
+  }
+  
+ 
+  
+  .btnstyle {
+    background-color: #5a6a6a;
+    color: white;
+    border: none;
+    width: 13%;
+    height: 9%;
+    top:65%;
+    left:15%;
+    font-size: 60%
+    
+  }
+ .half .description{
+    font-size: 65%;
+    top: 45%;
+    width: 35%;
+    left:13%;
+    color: white;
+  }
+  
+  .btnstyle:hover {
+    background-color: #788888;
+  }
+  .home-navbar {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .home-navbar .logo {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    font-size: 70%;
+  }
+  
+  .home-navbar .nav-left a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size:50%;
+    
+  }
+  .home-navbar .nav-left{
+    padding-right:50% ;
+  }
+  
+   .half .nav-right .login-btn {
+    position: absolute;
+    background-color: #728080;
+    border: 1px solid white !important;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top:4%;
+    margin:2px;
+    width: 8%;
+    height: 6%;
+    right: 5%;
+    
+
+  }
+  
+   .nav-right .login-btn:hover {
+    
+    background-color: #d5d5d5;
+    color: #728080;
+  }
+  
+  #section2 {
+    background-color: #b4b9b9;
+    position: relative;
+    
+  }
+  .collection-text{
+    font-family: 'Inknut Antiqua', serif;
+    position: absolute;
+    color: white;
+    top:12%;
+    font-weight: 400;
+    font-size: 70%;
+  }
+  .collection-navbar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    top:23%;
+  }
+  .collection-navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .collection-navbar a:active{
+    text-decoration: underline;
+  }
+  .best-seller {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    top: 25%;
+    padding: 2rem;
+  }
+  
+  
+  .best-product {
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    background-color: #728080;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .product-description {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    font-size: 21px;
+    left:0px;
+    top:74%
+  }
+  .product-description1{
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    font-size: 21px;
+    left:0px;
+    top: 83%;
+  }
+  .btnstyle1{
+    background-color: #728080;
+    color: white;
+    border: none;
+    width: 13%;
+    height: 8%;
+    top:80%;
+    border-radius: 0px !important;
+    font-size: 40%
+  }
+  .btnstyle1:hover {
+    background-color: #8f9494;
+  }
+  #section3 {
+    background-color: #2ecc71;
+  }
+  
+  .active {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  

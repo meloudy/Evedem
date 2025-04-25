@@ -56,7 +56,7 @@ const products = [
   { name: 'Oak Wood Table', sales: 4, revenue: '85,000.00DA', status: 'Out of stock' },
 ];
 
-function Dashboard() {
+function dashboard() {
   return (
     <div style={{ padding: '1rem' }}>
       <h4 className='statistics'>Statistics</h4>
@@ -128,4 +128,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default dashboard;

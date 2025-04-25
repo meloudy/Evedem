@@ -1,0 +1,10 @@
+.home{
+    display:flex;
+    flex-direction: column;
+}
+
+.home .home-text{
+    font-weight: 700;
+    font-size: 22;
+   
+}

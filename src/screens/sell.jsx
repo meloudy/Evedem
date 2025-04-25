@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import '../styles/Sell.css'
 
-function Sell(){
+function sell(){
     return(
         <div>
             <Navbar />
@@ -11,4 +11,4 @@ function Sell(){
 
         </div>
     )
-}export default Sell;
+}export default sell;

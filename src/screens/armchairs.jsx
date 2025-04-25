@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from '../components/Navbar';
-import Product from '../components/Product'
+import Navbar from '../components/navbar.jsx';
+import Product from '../components/product.jsx'
 import '../styles/Product.css';
-import '../images.d.ts';
+import '../images';
 import Armchair from '../assets/armchair1.png'
 import Armchair2 from '../assets/armchair2.png'
 import Armchair3 from '../assets/armchair3.png'
@@ -120,4 +120,4 @@ function Armchairs(){
     )
 }
 
-export default Armchairs;
+export default armchairs;

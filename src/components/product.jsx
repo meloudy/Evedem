@@ -1,19 +1,7 @@
 import React, { useState } from "react";
 import { Flag, ShoppingCart, MessageCircle } from "lucide-react";
 
-type ProductProps = {
-  imageUrl: string;
-  category: string;
-  name: string;
-  material: string;
-  width: number;
-  height: number;
-  price: number;
-  color: string;
-  status: string;
-};
-
-export default function Product({
+export default function product({
   imageUrl,
   category,
   name,
@@ -23,7 +11,7 @@ export default function Product({
   price,
   color,
   status,
-}: ProductProps) {
+}) {
   const [showComments, setShowComments] = useState(false);
 
   return (
@@ -40,7 +28,6 @@ export default function Product({
             className="w-10 h-10 rounded-full ml-2"
             style={{ backgroundColor: color || "white" }}
           />
-          
         </div>
         <p className="textprod">Status: {status}</p>
         <div className="flex justify-around mt-1 text-gray-200 btn-container icons">
@@ -60,43 +47,40 @@ export default function Product({
         </div>
       </div>
 
-      
       {showComments && (
-  <div className="comment-panel">
-    <div className="comment-header">
-      <h3 className="comment-title">Comments</h3>
-      <button className="close-button" onClick={() => setShowComments(false)}>✖</button>
-    </div>
-    
-    <div className="comment-list">
-      <div className="comment-item">
-        <img className="comment-avatar" src="https://i.pravatar.cc/30?img=1" alt="user" />
-        <div className="comment-bubble">
-          <span className="comment-username">Alice</span>
-          <p>Hello world hello world!</p>
+        <div className="comment-panel">
+          <div className="comment-header">
+            <h3 className="comment-title">Comments</h3>
+            <button className="close-button" onClick={() => setShowComments(false)}>✖</button>
+          </div>
+
+          <div className="comment-list">
+            <div className="comment-item">
+              <img className="comment-avatar" src="https://i.pravatar.cc/30?img=1" alt="user" />
+              <div className="comment-bubble">
+                <span className="comment-username">Alice</span>
+                <p>Hello world hello world!</p>
+              </div>
+            </div>
+            <div className="comment-item">
+              <img className="comment-avatar" src="https://i.pravatar.cc/30?img=2" alt="user" />
+              <div className="comment-bubble">
+                <span className="comment-username">Bob</span>
+                <p>Second comment here...</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="comment-input-container">
+            <input
+              type="text"
+              placeholder="Write a comment..."
+              className="comment-input"
+            />
+            <button className="send-button">➤</button>
+          </div>
         </div>
-      </div>
-      <div className="comment-item">
-        <img className="comment-avatar" src="https://i.pravatar.cc/30?img=2" alt="user" />
-        <div className="comment-bubble">
-          <span className="comment-username">Bob</span>
-          <p>Second comment here...</p>
-        </div>
-      </div>
-    </div>
-
-    <div className="comment-input-container">
-      <input
-        type="text"
-        placeholder="Write a comment..."
-        className="comment-input"
-      />
-      <button className="send-button">➤</button>
-    </div>
-  </div>
-)}
-
-
+      )}
     </div>
   );
 }

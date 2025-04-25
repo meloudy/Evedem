@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from '../components/Navbar.tsx';
+import Navbar from '../components/navbar.jsx';
 import '../styles/Categories.css';
-import '../images.d.ts'
+import '../images'
 import Armchair from '../assets/armchair.png';
 import DressingTable from '../assets/drsngtbl.png';
 import Table from '../assets/table.png'
 import Bed from '../assets/bed.png'
 import { useNavigate } from 'react-router-dom';
 
-function Categories(){
+function categories(){
   const navigate = useNavigate();
     return(<div>
         <Navbar/>
@@ -89,4 +89,4 @@ function Categories(){
     )
 }
 
-export default Categories;
+export default categories;

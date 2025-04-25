@@ -4,13 +4,14 @@
 }
 .header-section {
   background-color: #BFCCCC;
-  height: 45vh;
+  height: 42vh;
   position: relative;
+  width: 100vw;
 }
 
 .circle-bg {
-  width: 130vh;
-  height: 105vh;
+  width: 60vw;
+  height: 100vh;
   background-color: #A5B2B2;
   left: -17vh;
   top: -43vh;
@@ -54,6 +55,7 @@
   
 }
 
+
 .btnstyle:hover {
   background-color: #5a6a6a;
 }
@@ -68,7 +70,7 @@
   background-color: #5a6a6a;
 }
 
-/* Hamburger icon */
+
 .hamburger {
   cursor: pointer;
   display: flex;
@@ -83,7 +85,7 @@
   border-radius: 2px;
 }
 
-/* Mobile menu style */
+
 .mobile-menu {
   background-color: white;
   padding: 1rem;
@@ -91,7 +93,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Assurer que le cercle reste à gauche même sur mobile */
+
 @media (max-width: 768px) {
   .circle-bg {
     width: 150vw;
