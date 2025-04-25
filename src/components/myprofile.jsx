@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/MyProfile.css';
 import { MdSettings, MdEmail, MdPhone, MdHome } from 'react-icons/md';
 import Picture from '../assets/profilepic.png';
-import '../images';
+import '../images.d.ts';
 import { motion } from 'framer-motion';;
 
 

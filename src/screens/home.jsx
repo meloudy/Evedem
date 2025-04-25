@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/App.css';
+import '../styles/home.css';
 import Image from '../assets/homeimg.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +8,7 @@ import Fateuil from '../assets/armchair1.png';
 import Table from '../assets/table.png';
 import DTable from '../assets/drsngtbl.png'
 import Armchair from '../assets/armchair1.png';
+import '../images.d.ts';
 
 
 function home() {

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from '../components/navbar.jsx';
 import Product from '../components/product.jsx'
 import '../styles/Product.css';
-import '../images';
+import '../images.d.ts';
 import Armchair from '../assets/armchair1.png'
 import Armchair2 from '../assets/armchair2.png'
 import Armchair3 from '../assets/armchair3.png'
@@ -11,7 +11,7 @@ import Armchair4 from '../assets/armchair4.png'
 
 
 
-function Armchairs(){
+function armchairs(){
     
 
     return(

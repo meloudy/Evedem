@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from '../components/navbar.jsx';
 import Product from '../components/product.jsx'
 import '../styles/Product.css';
-import '../images';
+import '../images.d.ts';
 
 
 
