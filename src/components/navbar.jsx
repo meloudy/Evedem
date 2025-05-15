@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Navbar.css";
 import { FaSearch, FaShoppingCart, FaUser, FaBars } from "react-icons/fa";
-import { MdNotifications } from "react-icons/md";
-import { Link, useNavigate } from 'react-router-dom';
-import Profile from '../screens/profile';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 function navbar() {
   const navigate = useNavigate();
-  
+  const [isLogged, _] = useState(localStorage.getItem("$authkey") != null);
+  const goto = isLogged ? "profile" : "login"
   const [menuOpen, setMenuOpen] = useState(false);
   const [showSearchBar, setShowSearchBar] = useState(false);
 
@@ -18,6 +17,7 @@ function navbar() {
   const toggleSearch = () => {
     setShowSearchBar(!showSearchBar);
   };
+
 
   return (
     <>
@@ -33,15 +33,15 @@ function navbar() {
         <ul className="nav-links d-none d-lg-flex justify-content-center links">
           <li><a href="#" className="sell text-decoration-none">Sell</a></li>
           <li><Link to="/categories" className="products text-decoration-none">Products</Link></li>
-          <li><a href="#" className="contact text-decoration-none">Contact us</a></li>
-          <button className="login-btn">Login</button>
+          <li><a href="#" className="contact text-decoration-none pr-1">Contact us</a></li>
+          
         </ul>
 
         <div className="navbar-right d-none d-lg-flex">
           <div className="icons">
             <FaSearch onClick={toggleSearch} style={{ cursor: "pointer" }} />
             <FaShoppingCart onClick={() => navigate('/mycart')} />
-            <FaUser onClick={() => navigate('/profile')} />
+            <FaUser onClick={() => navigate("/" + goto)} />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ function navbar() {
           <li><a href="#" className="sell text-decoration-none">Sell</a></li>
           <li><Link to="/categories" className="products text-decoration-none">Products</Link></li>
           <li><a href="#" className="contact text-decoration-none">Contact us</a></li>
-          <button className="login-btn">Login</button>
+          <button className="login-btn" onClick={ () => {Navigate("/" + goto)}}>{goto}</button>
         </ul>
       </div>
     </>

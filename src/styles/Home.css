@@ -155,10 +155,10 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    top:4%;
+    top:4dvh;
     margin:2px;
-    width: 8%;
-    height: 6%;
+    width: 70px;
+    height: 40px;
     right: 5%;
     
 

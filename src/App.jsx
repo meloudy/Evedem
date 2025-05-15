@@ -1,16 +1,14 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
-import Home from "./screens/Home";
-import Categories from "./screens/Categories";
-import Beds from './screens/Beds';
-import Tables from './screens/Tables';
-import Armchairs from './screens/Armchairs';
-import DressingTables from './screens/DressingTables';
-import Profile from './screens/Profile';
+import Home from "./screens/home";
+import Categories from "./screens/categories";
+import Beds from './screens/beds';
+import Tables from './screens/tables';
+import Armchairs from './screens/armchairs';
+import DressingTables from './screens/dressingtables';
+import Profile from './screens/profile';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sell from './screens/Sell';
-import MyCart from './screens/MyCart';
+import MyCart from './screens/mycart';
+import Login from './screens/login';
 
 
 
@@ -27,7 +25,8 @@ function App() {
         <Route path="/armchairs" element={<Armchairs />} />
         <Route path="/dressing-tables" element={<DressingTables />} />
         <Route path="/profile" element={<Profile />} />
-       <Route path="/mycart" element={<MyCart />} />
+        <Route path="/mycart" element={<MyCart />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
     

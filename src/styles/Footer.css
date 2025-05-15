@@ -1,0 +1,26 @@
+.footer {
+    margin: 2rem 0;
+    min-width: 100vw;
+    align-items: center;
+}
+.footerH3{
+    color: #6D7C7C;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Inknut Antiqua', serif;
+}
+.footerFlex {
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerFlexCol {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footerSpan{
+    font-weight: 600;
+}
