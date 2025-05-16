@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Flag, ShoppingCart, MessageCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Popup from "../components/popup.jsx";
 
 export default function product({
   imageUrl,
@@ -13,6 +15,21 @@ export default function product({
   status,
 }) {
   const [showComments, setShowComments] = useState(false);
+  const [popup, setPopup] = useState({ message: "", type: "", visible: false });
+    const navigate = useNavigate();
+     const handleCheckout = () => {
+    // Simuler une action réussie
+    setPopup({
+      message: "Order placed successfully!",
+      type: "success",
+      visible: true
+    });
+  };
+
+  const handleConfirm = () => {
+    setPopup({ ...popup, visible: false });
+    navigate("/profile"); // Exemple : rediriger vers profile
+  };
 
   return (
     <div className="product">
@@ -34,9 +51,17 @@ export default function product({
           <button title="Flag" className="btn">
             <Flag className="w-4 h-4 hover:text-black icon" />
           </button>
-          <button title="Cart" className="btn">
+          <button title="Cart" className="btn" onClick={handleCheckout} >
             <ShoppingCart className="w-4 h-4 hover:text-black transition-colors icon" />
           </button>
+          {popup.visible && (
+        <Popup
+          message={popup.message}
+          type={popup.type}
+          onClose={() => setPopup({ ...popup, visible: false })}
+          onConfirm={handleConfirm}
+        />
+      )}
           <button
             title="Comment"
             className="btn"

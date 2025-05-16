@@ -1,0 +1,164 @@
+.user-title {
+  padding: 1rem;
+  color: #686464;
+}
+
+.user-summary-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  flex: 1;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary-card h3 {
+  margin: 0;
+  color: #7d6d6d;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #7d6d6d;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.headers {
+  color: #999;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.status-active,
+.status-banned {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  display: inline-block;
+  width: 75px; 
+  text-align: center;
+}
+
+.status-active {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-banned {
+  background-color: #f3daa3;
+  color: #eb4c0d;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.clickable-row:hover {
+  background-color: #f5f5f5;
+}
+
+.profile-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.panel-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #6a948a;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: #6a948a;
+}
+
+.about {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+.ban {
+  width: 100px; /* ou 50px si tu veux, mais ici 100px pour que ça se voie mieux */
+  display: inline-block; /* assure-toi que le width est bien pris en compte */
+  padding: 6px 10px;
+  background-color: #f3daa3;
+  color: #eb4c0d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.unban {
+  width: 100px;
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+.unban:hover{
+    color : #d1e7dd;
+    background-color: #0f5132;
+
+}
+
+.ban:hover{
+    color : #f3daa3;
+    background-color:  #eb4c0d;;
+}
+
+

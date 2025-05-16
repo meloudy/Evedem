@@ -36,6 +36,7 @@
     border: none;
     background: none;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
      
    
     
@@ -49,7 +50,8 @@
   .sidemenu .btn.active {
     color: white;
     background-color: #6a948a;
-    width: 100%;
+    font-weight: 400;
+    /* width: 100%; */
   }
   
   .sidemenu .btn.active .icon {
@@ -81,7 +83,7 @@
     align-items: center;
     box-shadow: 0 0 15px rgba(31, 77, 77, 0.507);
   }
-  .btns button{
+  /* .btns button{
     border: 1px solid #b9b3b3;
     background-color: #6a948a;
     color: white;
@@ -89,13 +91,13 @@
     height:30px;
     border-radius: 20px;
     font-size: 18px;
-  }
-  .btns{
+  } */
+  /* .btns{
     display: flex;
     flex-direction: row;
     gap:7px;
-  }
-  .btns button:hover{
+  } */
+  /* .btns button:hover{
     border: 1px solid #b9b3b3;
     background-color: white;
     color: #6a948a;
@@ -103,7 +105,7 @@
     height:30px;
     border-radius: 20px;
     font-size: 18px;
-  }
+  } */
   .logout-text{
     font-size: 20px;
     color: #535050;

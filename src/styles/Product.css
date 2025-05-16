@@ -97,8 +97,8 @@
     margin-top:0px
 }
 .comment-panel {
-  position: absolute;
-  top: 25%;
+  position: fixed;
+  top: 17%;
   left: 25%;
   width: 50%;
   height: 80%;
