@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'; 
 import '../styles/SideMenu.css';
-import { MdNotifications, MdDashboard, MdLogout, MdShoppingCart, MdPeople } from "react-icons/md";
+import { MdNotifications, MdDashboard, MdLogout, MdShoppingCart, MdPeople, MdInventory } from "react-icons/md"; // ✅ Ajout de MdInventory
 import Dashboard from './admindashboard';
 import Notifications from './notifications';
 import OrderManagement from './orderManagement';
 import UserManagement from './userManagement';
+import ProductsManagement from './productsManagement'; 
+import NotificationManagement from './notificationsManagement';
 
 function Adminsidemenu() {
   const [showLogout, setShowLogout] = useState(false);
@@ -42,11 +44,13 @@ function Adminsidemenu() {
       case 'dashboard':
         return <Dashboard />;
       case 'notifications':
-        return <Notifications />;
+        return <NotificationManagement />;
       case 'orders':
         return <OrderManagement />;
       case 'users':
         return <UserManagement />;
+      case 'products':
+        return <ProductsManagement />; 
       default:
         return <Dashboard />;
     }
@@ -69,7 +73,7 @@ function Adminsidemenu() {
           onClick={() => handleButtonClick('orders')}
         >
           <MdShoppingCart className="icon" />
-          Order Management
+          Orders Management
         </button>
 
         <button
@@ -77,7 +81,15 @@ function Adminsidemenu() {
           onClick={() => handleButtonClick('users')}
         >
           <MdPeople className="icon" />
-          User Management
+          Users Management
+        </button>
+
+        <button
+          className={`btn ${activeComponent === 'products' ? 'active' : ''}`}
+          onClick={() => handleButtonClick('products')}
+        >
+          <MdInventory className="icon" /> 
+          Products Management
         </button>
 
         <button

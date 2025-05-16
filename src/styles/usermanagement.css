@@ -63,6 +63,7 @@
 
 .user-info {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }
@@ -127,8 +128,8 @@
   color: #666;
 }
 .ban {
-  width: 100px; /* ou 50px si tu veux, mais ici 100px pour que ça se voie mieux */
-  display: inline-block; /* assure-toi que le width est bien pris en compte */
+  width: 100px; 
+  display: inline-block;
   padding: 6px 10px;
   background-color: #f3daa3;
   color: #eb4c0d;

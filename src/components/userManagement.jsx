@@ -99,6 +99,7 @@ function UserManagement() {
               <td>{idx + 1}</td>
               <td>
                 <div className="user-info">
+                  {/* <img src={user.imgSrc} className='profile-avatar'></img> */}
                   <span>{user.name}</span>
                 </div>
               </td>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import AdminSideMenu from '../components/adminsidemenu';
-import '../styles/profile.css';
 import "../styles/adminNavbar.css";
 import { FaSearch, FaBars } from "react-icons/fa";
+import { Link, useNavigate } from 'react-router-dom';
 
-function Admin() {
+function AdminNavbar() {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [showSearchBar, setShowSearchBar] = useState(false);
 
@@ -12,11 +12,10 @@ function Admin() {
   const toggleSearch = () => setShowSearchBar(!showSearchBar);
 
   return (
-    <div className='layout'>
-      {/* Admin navbar */}
+    <>
       <div className="admin-navbar">
         <div className="navbar-left">
-          <span className="logo text-decoration-none">Evedem</span>
+          {/* <Link to="/" className="logo text-decoration-none">Evedem Admin</Link> */}
         </div>
 
         <div className="d-lg-none d-flex align-items-center" onClick={toggleMenu} style={{ cursor: "pointer" }}>
@@ -24,9 +23,9 @@ function Admin() {
         </div>
 
         <ul className="nav-links d-none d-lg-flex justify-content-center links">
-          <li><a href="/" className="text-decoration-none">Dashboard</a></li>
-          <li><a href="/" className="text-decoration-none">Users</a></li>
-          <li><a href="/" className="text-decoration-none">Products</a></li>
+          {/* <li><Link to="/" className="text-decoration-none">Dashboard</Link></li>
+          <li><Link to="/" className="text-decoration-none">Users</Link></li>
+          <li><Link to="/" className="text-decoration-none">Products</Link></li> */}
         </ul>
 
         <div className="navbar-right d-none d-lg-flex">
@@ -49,18 +48,13 @@ function Admin() {
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <div className="close-btn" onClick={toggleMenu}>×</div>
         <ul className="mobile-links">
-          <li><a href="/" className="text-decoration-none">Dashboard</a></li>
-          <li><a href="/" className="text-decoration-none">Users</a></li>
-          <li><a href="/" className="text-decoration-none">Products</a></li>
+          {/* <li><Link to="/" className="text-decoration-none">Dashboard</Link></li>
+          <li><Link to="/" className="text-decoration-none">Users</Link></li>
+          <li><Link to="/" className="text-decoration-none">Products</Link></li> */}
         </ul>
       </div>
-
-      {/* Contenu principal */}
-      <div className='main'>
-        <AdminSideMenu />
-      </div>
-    </div>
+    </>
   );
 }
 
-export default Admin;
+export default AdminNavbar;
