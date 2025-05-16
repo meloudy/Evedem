@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'; 
 import '../styles/SideMenu.css';
-import { MdNotifications, MdDashboard, MdLogout, MdShoppingCart, MdPeople, MdInventory } from "react-icons/md"; // ✅ Ajout de MdInventory
+import { MdNotifications, MdDashboard, MdLogout, MdShoppingCart, MdPeople, MdInventory } from "react-icons/md"; 
 import Dashboard from './admindashboard';
 import Notifications from './notifications';
 import OrderManagement from './orderManagement';

@@ -13,7 +13,7 @@ function Admin() {
 
   return (
     <div className='layout'>
-      {/* Admin navbar */}
+   
       <div className="admin-navbar">
         <div className="navbar-left">
           <span className="logo text-decoration-none">Evedem</span>
@@ -23,11 +23,11 @@ function Admin() {
           <FaBars size={22} color="#6D7C7C" />
         </div>
 
-        <ul className="nav-links d-none d-lg-flex justify-content-center links">
+        {/* <ul className="nav-links d-none d-lg-flex justify-content-center links">
           <li><a href="/" className="text-decoration-none">Dashboard</a></li>
           <li><a href="/" className="text-decoration-none">Users</a></li>
           <li><a href="/" className="text-decoration-none">Products</a></li>
-        </ul>
+        </ul> */}
 
         <div className="navbar-right d-none d-lg-flex">
           <FaSearch onClick={toggleSearch} style={{ cursor: "pointer" }} />
