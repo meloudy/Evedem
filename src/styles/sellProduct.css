@@ -1,0 +1,74 @@
+.sell-container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.sell-title {
+  text-align: center;
+  color: #6b6a6a;
+  margin-bottom: 20px;
+}
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sell-form input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.dimension-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.color-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.preview-btn, .post-btn, .cancel-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+.post-btn {
+  background-color: #748888;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.preview-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.preview-title {
+  margin-bottom: 15px;
+  color: #333;
+}

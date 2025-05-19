@@ -51,7 +51,7 @@ export default function product({
           <button title="Flag" className="btn">
             <Flag className="w-4 h-4 hover:text-black icon" />
           </button>
-          <button title="Cart" className="btn" onClick={handleCheckout} >
+          <button title="Cart" className="btn"  >
             <ShoppingCart className="w-4 h-4 hover:text-black transition-colors icon" />
           </button>
           {popup.visible && (

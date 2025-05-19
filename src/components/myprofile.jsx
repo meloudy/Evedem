@@ -3,10 +3,13 @@ import '../styles/MyProfile.css';
 import { MdSettings, MdEmail, MdPhone, MdHome } from 'react-icons/md';
 import Picture from '../assets/profilepic.png';
 import '../images.d.ts';
-import { motion } from 'framer-motion';;
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function myprofile() {
+  const navigate = useNavigate();
   const name = 'Elizabeth Covey';
   const city = 'Bejaia';
   const country = 'Algeria';
@@ -19,9 +22,9 @@ function myprofile() {
       <div className="banner"></div>
 
       <div className='btn-img'>
-        <img className="profile-avatar" src={Picture} alt="user" />
+        <img className="profile-avatar1" src={Picture} alt="user" />
         <p className='name'>{name}</p>
-        <button className='edit'>
+        <button className='edit' onClick={() => navigate('/manage-account')}>
           <MdSettings className='icon' />
           Manage Account
         </button>
@@ -44,15 +47,15 @@ function myprofile() {
          </p>
       )
     },
-    {
-      title: 'Delivery Preferences',
-      content: (
-        <>
-          <p>Preferred delivery time: <strong>Afternoons (12:00 - 16:00)</strong></p>
-          <p>Default address: <strong>32, Rue de l’Indépendance, Bejaia</strong></p>
-        </>
-      )
-    }
+    // {
+    //   title: 'Delivery Preferences',
+    //   content: (
+    //     <>
+    //       <p>Preferred delivery time: <strong>Afternoons (12:00 - 16:00)</strong></p>
+    //       <p>Default address: <strong>32, Rue de l’Indépendance, Bejaia</strong></p>
+    //     </>
+    //   )
+    // }
   ].map((section, index) => (
     <motion.div
       className='info-box'

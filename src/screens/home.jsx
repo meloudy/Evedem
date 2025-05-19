@@ -13,6 +13,7 @@ import '../images.d.ts';
 
 function home() {
   const [currentSection, setCurrentSection] = useState(0);
+   const navigate = useNavigate();
 
   
   const handleScroll = () => {
@@ -58,7 +59,7 @@ function home() {
 
             
            
-            <button className="btnstyle position-absolute mt-4 ml-3 px-3 py-2 rounded-pill">Discover now</button>
+            <button className="btnstyle position-absolute mt-4 ml-3 px-3 py-2 rounded-pill" onClick={() => navigate('/categories')}>Discover now</button>
           </div>
         </div>
         <div className='half left'>
@@ -101,12 +102,63 @@ function home() {
   </div>
 </div>
 
-</div> <button className="btnstyle1 position-absolute mt-4 ml-3 px-3 py-2 rounded-pill">View All</button>
+</div> <button className="btnstyle1 position-absolute mt-4 ml-3 px-3 py-2 rounded-pill" onClick={() => navigate('/categories')}>View All</button>
 
       </div>
       <div className={`section ${currentSection === 2 ? 'active' : ''}`} id="section3">
-        <h1>Section 3</h1>
+      <div className={`section ${currentSection === 2 ? 'active' : ''}`} id="section3">
+  <div className="about-block">
+    <h2 className="about-title">About Evedem</h2>
+    <p className="about-text">
+      Evedem is your destination for stylish, functional and affordable home furniture.
+      We blend simplicity and elegance to help you create warm and inviting spaces.
+    </p>
+    <div className="about-features">
+      <div className="feature-card">
+        <h4>✨ Elegant Design</h4>
+        <p>Minimalist and modern pieces to elevate your home.</p>
       </div>
+      <div className="feature-card">
+        <h4>🛋️ Comfort First</h4>
+        <p>We prioritize comfort without compromising on style.</p>
+      </div>
+      <div className="feature-card">
+        <h4>🤝 Customer Care</h4>
+        <p>We’re here to support you every step of the way.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <footer className="footer">
+  <div className="footer-top">
+    <div className="footer-brand">
+      <h3 className="logo">Evedem</h3>
+      <p className="tagline">Every Detail Matters</p>
+      <p><strong>Address :</strong> 13 Management 718 Thompson Lane Suite 108256. Nashville, États-Unis</p>
+      <p><strong>Phone :</strong> (916) 456-089</p>
+      <p><strong>Email :</strong> evedem@gmail.com</p>
+    </div>
+
+   
+
+    <div className="footer-hours">
+      <h4>Opening hours</h4>
+      <div className='footer-texts'>
+         <p>mon - fri : 7:00AM - 8:00PM</p>
+         <p>saturday : 7:00AM - 3:30PM</p>
+         <p>sunday : 7:00AM - 3:00PM</p>
+      </div>
+     
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© 2024 Evedem</p>
+  </div>
+</footer>
+
     </div>
   );
 }

@@ -62,3 +62,15 @@
   font-size: 1rem;
   color: #6a948a;
 }
+
+.notif-icon.success {
+  color: #4CAF50; 
+}
+
+.notif-icon.info {
+  color: #2196F3; 
+}
+
+.notif-icon.danger {
+  color: #f44336;
+}
