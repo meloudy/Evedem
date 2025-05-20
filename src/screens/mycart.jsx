@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/MyCart.css';
 import Navbar from '../components/navbar';
-import { apihost } from '../config';
-import Call from '../utils/api';
+import { apihost } from '../api/call';
+import Call from '../api/call';
 
 function MyCart() {
     const [cartItems, setCartItems] = useState([]);
