@@ -3,11 +3,11 @@ import { Flag, ShoppingCart, MessageCircle } from "lucide-react";
 
 export default function product({
   imageUrl,
-  category,
   name,
   material,
   width,
   height,
+  depth,
   price,
   color,
   status,
@@ -19,9 +19,8 @@ export default function product({
       <img src={imageUrl} className="img" alt={name} />
       <div className="parent">
         <p className="name mt-3">{name}</p>
-        <p className="textprod">Material: {material}</p>
-        <p className="textprod">Dimensions: {width} x {height} cm</p>
-        <p className="textprod">Price: ${price}</p>
+        <p className="textprod">Dimensions: {width} x {height} x {depth} cm</p>
+        <p className="textprod">Price: {price}</p>
         <div className="d-flex flex-row align-items-center">
           <p className="textprod">Color:</p>
           <div

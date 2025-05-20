@@ -5,7 +5,7 @@ import Picture from '../assets/profilepic.png';
 import '../images.d.ts';
 import { motion } from 'framer-motion';
 import FetchInfo from '../api/user/fetchinfo.js'
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import Logout from '../api/user/logout.js'
 
 
@@ -61,7 +61,7 @@ function myprofile() {
         <p className='name'>{name}</p>
         <button className='edit'>
           <MdSettings className='icon' />
-          Manage Account
+          <Link to="/manage-account"> Manage Account </Link>
         </button>
       </div><div className='info-sections'>
         {[
@@ -81,21 +81,12 @@ function myprofile() {
               <p>{abtme}
               </p>
             )
-          },
-          {
-            title: 'Delivery Preferences',
-            content: (
-              <>
-                <p>Preferred delivery time: <strong>Afternoons (12:00 - 16:00)</strong></p>
-                <p>Default address: <strong>32, Rue de l’Indépendance, Bejaia</strong></p>
-              </>
-            )
           }
         ].map((section, index) => (
           <motion.div
             className='info-box'
             key={index}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 45 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.3 }}
           >

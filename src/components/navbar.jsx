@@ -31,7 +31,7 @@ function navbar() {
         </div>
 
         <ul className="nav-links d-none d-lg-flex justify-content-center links">
-          <li><a href="#" className="sell text-decoration-none">Sell</a></li>
+          <li><a href="/sell" className="sell text-decoration-none">Sell</a></li>
           <li><Link to="/categories" className="products text-decoration-none">Products</Link></li>
           <li><a href="#" className="contact text-decoration-none pr-1">Contact us</a></li>
           

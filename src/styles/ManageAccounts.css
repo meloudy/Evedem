@@ -1,0 +1,65 @@
+.manage-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  width: 100vw;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.manage-container h2 {
+  color: #6A6565;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.manage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.manage-form label {
+  display: flex;
+  flex-direction: column;
+  color: #4a4747;
+  font-weight: 500;
+}
+
+.manage-form .icon {
+  margin-bottom: 5px;
+  color: #6a6565;
+}
+
+.manage-form input,
+.manage-form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.manage-form input:focus,
+.manage-form textarea:focus {
+  border-color: #6a948a;
+  box-shadow: 0 0 5px #6a948a5f;
+}
+
+.save-btn {
+  margin-top: 10px;
+  background-color: #6A6565;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #4f7c74;
+}
