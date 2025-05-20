@@ -1,0 +1,121 @@
+.register {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.registerForm {
+    background-color: #BFCCCC;
+    width: 50%;
+}
+
+.font-Inknut {
+    font-family: 'Inknut Antiqua', serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.font-MarckScript {
+    font-family: 'Marck Script', cursive;
+    color: #6D7C7C;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.75rem;
+    right: 0.25rem;
+}
+
+.loginpic {
+    width: 50%;
+    position: relative;
+}
+
+.loginpic .pic {
+    width: 100%;
+    min-height: max-content;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    margin-top: 2.5rem;
+    width: 90%;
+
+}
+
+.psDiv {
+    position: relative;
+    padding-inline: 4px;
+    margin: 8px;
+}
+
+.inputsDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.forgetPasswordP {
+    margin-top: 10px;
+    color: #6D7C7C;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+.inpt {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin:  0.5rem 0;
+    border-radius: 1.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.button {
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    color: white;
+    background-color: #6D7C7C;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+
+.login-span {
+    font-weight: 700;
+    color: #6D7C7C;
+}
+
+.login-p {
+    color: #6D7C7C;
+    text-align: center;
+
+}
+
+.no-costum{        
+    text-decoration: none;   /* Enlèver le soulignement*/
+  } 
+   

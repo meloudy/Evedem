@@ -5,11 +5,14 @@ import { MdNotifications, MdDashboard, MdLogout } from "react-icons/md";
 import Profile from './myprofile';
 import Dashboard from './dashboard';
 import Notifications from './notifications';
+import Logout from '../api/user/logout'
+import { Navigate } from 'react-router-dom';
 
 function SideMenu() {
   const [showLogout, setShowLogout] = useState(false);
   const [activeComponent, setActiveComponent] = useState('profile');
   const logoutRef = useRef(null);
+
 
   const handleButtonClick = (component) => {
     setActiveComponent(component);
@@ -18,7 +21,16 @@ function SideMenu() {
   const onClose = () => {
     setShowLogout(false);
   };
+  const onLogout = () => {
+    Logout()
+    localStorage.clear()
+    location.assign("/")
+  }
 
+  if (localStorage.getItem("$authkey") == null) {
+    localStorage.clear()
+    return <Navigate to="/login" />
+  }
   useEffect(() => {
     function handleClickOutside(event) {
       if (logoutRef.current && !logoutRef.current.contains(event.target)) {
@@ -95,7 +107,7 @@ function SideMenu() {
           <p className='logout-text'>Are you sure you want to log out?</p>
           <div className='btns'>
             <button onClick={onClose}>Cancel</button>
-            <button>Logout</button>
+            <button onClick={onLogout}>Logout</button>
           </div>
         </div>
       )}

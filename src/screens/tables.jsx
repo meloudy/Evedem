@@ -8,23 +8,23 @@ import '../images.d.ts';
 
 
 
-function tables(){
-    
-
-    return(
-        <div>
-           <Navbar/>
-           <p className="logo2">Evedem</p>
-           <p className="armchairs-style">Tables</p>
-           <div>
-  <div className="row  d-flex ">
+function tables() {
 
 
-  </div>
- </div>
+  return (
+    <div>
+      <Navbar />
+      <p className="logo2">Evedem</p>
+      <p className="armchairs-style">Tables</p>
+      <div>
+        <div className="row  d-flex ">
+
 
         </div>
-    )
+      </div>
+
+    </div>
+  )
 }
 
 export default tables;

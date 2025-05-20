@@ -1,17 +1,13 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
-import Home from "./screens/Home";
-import Categories from "./screens/Categories";
-import Beds from './screens/Beds';
-import Tables from './screens/Tables';
-import Armchairs from './screens/Armchairs';
-import DressingTables from './screens/DressingTables';
-import Profile from './screens/Profile';
+import Home from "./screens/home";
+import Categories from "./screens/categories";
+import Category from "./screens/category"
+import Profile from './screens/profile';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sell from './screens/Sell';
-import MyCart from './screens/MyCart';
-
+import MyCart from './screens/mycart';
+import Login from './screens/login';
+import Sell from './screens/sell';
+import ManageAccount from './screens/manageaccount'
 
 
 
@@ -22,15 +18,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/beds" element={<Beds />} />
-        <Route path="/tables" element={<Tables />} />
-        <Route path="/armchairs" element={<Armchairs />} />
-        <Route path="/dressing-tables" element={<DressingTables />} />
+        <Route path="/categories/:catId" element={<Category />} />
+        <Route path="/sell" element={<Sell />} />
+        <Route path="/manage-account" element={<ManageAccount />} />
         <Route path="/profile" element={<Profile />} />
-       <Route path="/mycart" element={<MyCart />} />
+        <Route path="/mycart" element={<MyCart />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
-    
+
   );
 }
 
